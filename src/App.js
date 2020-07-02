@@ -2,16 +2,15 @@ import React, {useState} from 'react';
 // import { Button } from 'reactstrap';
 import './App.css';
 
-// const api = {
-//   key: "AIzaSyDivdkP9qia15m1p9_hxyaOL4PpU5mskOQ",
-//   base: "https://us-central1-jokeapp2020.cloudfunctions.net/joke"
-// }
+// var express = require('express');
+// var cors = require('cors');
+// var app.use(cors());
 
 function App() {
   const [joke, setJoke] = useState('Wanna hear a joke?');
 
   const data = async () => {
-    const apiRes = await fetch('https://us-central1-jokeapp2020.cloudfunctions.net/joke');
+    const apiRes = await fetch('/joke');
     const resJSON = await apiRes.json();
     // var x = Math.floor((Math.random() * 10));
 
