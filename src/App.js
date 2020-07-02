@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { Button } from 'reactstrap';
+// import { Button } from 'reactstrap';
 import './App.css';
 
 // const api = {
@@ -29,16 +29,31 @@ function App() {
   };
 
   return (
-    <div className="app"> 
-        <div className="container">
-          <div className="cardbody">
-            <div className="joke">
-              <h1 value={joke} onClick={(e)=>setJoke(e.target.value)}>{joke}</h1>
-            </div>
-            <Button className="button" onClick={e => handleSearch(e)}>Tell me a joke</Button>
-          </div>
+    // <div className="app"> 
+    //     <div className="container">
+    //       <div className="cardbody">
+    //         <div className="joke">
+    //           <h1 value={joke} onClick={(e)=>setJoke(e.target.value)}>{joke}</h1>
+    //         </div>
+    //         <div className="button">
+    //           <button onClick={e => handleSearch(e)}>Tell me a joke</button>
+    //         </div>
+    //       </div>
+    //     </div>
+    // </div>
+
+<div className="app"> 
+    <div className="container">
+      <div className="cardbody">
+        <div className="joke">
+          <h1 value={joke} onClick={(e)=>setJoke(e.target.value)}>{joke}</h1>
         </div>
+        <div className="button">
+          <button onClick={e => handleSearch(e)}>Tell me a joke</button>
+        </div>
+      </div>
     </div>
+</div>
   );
 }
 
