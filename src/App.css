@@ -1,7 +1,7 @@
 .container {
     background: #833ab4;
-    background: -webkit-linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
-    background: linear-gradient(to right, #fcb045, #fd1d1d, #833ab4);
+    background: -webkit-linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
+    background: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
     text-align: center;
     position:fixed;
     top: 0;
@@ -16,13 +16,36 @@
 
 .cardbody{
     margin: auto;
-    width: 50%;
+    width: 60%;
+    height: 50%;
     border: 3px solid black;
     padding: 10px;
+    /* TRY */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
+/* BUTTON  */
+.button {
+    background-color: none;
+    padding: 10px 50px 10px 50px;
+    color: black;
+    border: 2px solid black; 
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-decoration: none;
+}
+.button:hover {
+    text-shadow: 0 0 2em rgba(255,255,255,1);
+    color: #FFFFFF;
+    border-color: #FFFFFF;
+    text-decoration: none;
+}
 
-
+body {
+    font-size: calc(14px + (26 - 14) * ((100vw - 300px) / (1600 - 300)));
+    /* line-height: calc(1.3em + (1.5 - 1.2) * ((100vw - 300px)/(1600 - 300))); */
+  }
 
 
 

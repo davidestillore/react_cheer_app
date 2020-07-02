@@ -48,8 +48,8 @@ function App() {
         <div className="joke">
           <h1 value={joke} onClick={(e)=>setJoke(e.target.value)}>{joke}</h1>
         </div>
-        <div className="button">
-          <button onClick={e => handleSearch(e)}>Tell me a joke</button>
+        <div className="buttondiv">
+          <a href="/" className="button" onClick={e => handleSearch(e)}>Tell me a joke</a>
         </div>
       </div>
     </div>
