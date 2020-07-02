@@ -1,4 +1,6 @@
 import React, {useState} from 'react';
+import { Button } from 'reactstrap';
+import './App.css';
 
 // const api = {
 //   key: "AIzaSyDivdkP9qia15m1p9_hxyaOL4PpU5mskOQ",
@@ -28,10 +30,14 @@ function App() {
 
   return (
     <div className="app"> 
-      <div>
-        <p value={joke} onClick={(e)=>setJoke(e.target.value)}>{joke}</p>
-        <button onClick={e => handleSearch(e)}>Tell me a joke</button>
-      </div>
+        <div className="container">
+          <div className="cardbody">
+            <div className="joke">
+              <h1 value={joke} onClick={(e)=>setJoke(e.target.value)}>{joke}</h1>
+            </div>
+            <Button className="button" onClick={e => handleSearch(e)}>Tell me a joke</Button>
+          </div>
+        </div>
     </div>
   );
 }
