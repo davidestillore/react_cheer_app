@@ -13,9 +13,14 @@ function App() {
   const data = async () => {
     const apiRes = await fetch('https://us-central1-jokeapp2020.cloudfunctions.net/joke');
     const resJSON = await apiRes.json();
-    var x = Math.floor((Math.random() * 10));
+    // var x = Math.floor((Math.random() * 10));
 
-    // const joke = data[x].joke;
+    function getRandomInt(max) {
+      return Math.floor(Math.random() * Math.floor(max));
+    }
+    var count = resJSON.length;
+    var x = getRandomInt(count);
+
     return resJSON[x];
   };
 
